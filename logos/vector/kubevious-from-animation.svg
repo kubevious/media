@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 40"  >
+
+    <defs>
+        <clipPath id="telescope-tube-clip">
+            <path class="telescope-tube-clip-animated" d="M14.8,28c0.9-4.6,5-8,9.8-8c4.8,0,8.9,3.4,9.8,8l-0.1,12L50,40V0H0v40l14.8,0"/>
+        </clipPath>
+        <mask id="telescope-mask">
+            <rect fill="#fff" x="0" y="0" width="100%" height="100%" />
+            <rect class="telescope-mask-animated" fill="#000" x="20.4" y="8.5" width="8.3" height="18.4"/>
+            <path fill="#fff" d="M24.6,20.8c-4.3,0-7.9,3.1-8.8,7.2h17.5C32.6,23.9,29,20.8,24.6,20.8z"/>
+        </mask>
+    </defs>
+
+
+    <path d="M12,40v-7h24.9v7h-9.1c0-0.6,0-1.2-0.1-1.7c-0.3-1.8-1.8-2.9-3.6-2.8c-1.6,0.1-3,1.5-3,3.2c0,0.4,0,0.9,0,1.3H12z"/>
+    <path d="M26,40c0-0.5,0-0.9,0-1.4c0-0.9-0.6-1.6-1.4-1.6c-0.8-0.1-1.5,0.5-1.6,1.3c-0.1,0.5,0,1.1,0,1.7H26z"/>
+    <path d="M38.3,31.5H11c-0.5,0-1-0.4-1-1v0c0-0.5,0.4-1,1-1h27.2c0.5,0,1,0.4,1,1v0C39.3,31,38.8,31.5,38.3,31.5z"/>
+
+    <g class="tube" clip-path="url(#telescope-tube-clip)">
+        <g class="tube-wrapper" >
+            <g class="tube-top">
+                <ellipse fill="#4A90E2" cx="24.5" cy="6.6" rx="5" ry="0.9"></ellipse>
+                <rect x="18.8" y="6.5" rx="1" ry="1" width="11.5" height="4.4"/>
+            </g>
+            <path class="tube-body" d="M20.7,12.6v1.1c0,0.6,0.5,1,1,1v7.6h5.8v-7.6c0.6,0,1-0.5,1-1.1v-1H20.7z"/>
+        </g>
+    </g>
+
+    <path mask="url(#telescope-mask)" d="M24.6,18.4c-5.8,0-10.6,4.1-11.7,9.6h23.4C35.2,22.5,30.4,18.4,24.6,18.4z"/>
+    <circle class="telescope-rotation-center" cx="24.5" cy="28" r="1" fill="transparent" />
+</svg>
